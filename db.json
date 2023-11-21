@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Como funciona o NextJS",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolorem ex suscipit, quis maxime recusandae sunt corrupti at doloribus nesciunt iusto vel dignissimos aperiam aspernatur eos reprehenderit quas harum. Fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, rem fugit quas ipsum tempora, blanditiis culpa repellendus fuga iste rerum animi deleniti? Modi voluptatum repellendus magnam dolore qui sequi explicabo?",
+      "author": "Bruno Ferreira",
+      "createAt": "2023-10-10T20:00:44.505Z"
+     
+    },
+    {
+      "id": 2,
+      "title": "Veja como funciona React Native",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolorem ex suscipit, quis maxime recusandae sunt corrupti at doloribus nesciunt iusto vel dignissimos aperiam aspernatur eos reprehenderit quas harum. Fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, rem fugit quas ipsum tempora, blanditiis culpa repellendus fuga iste rerum animi deleniti? Modi voluptatum repellendus magnam dolore qui sequi explicabo?",
+      "author": "Pedro Ferreira",
+      "createAt": "2023-11-10T20:00:44.505Z"
+
+
+    },
+    {
+      "id": 3,
+      "title": "Veja como funciona o NextJS",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolorem ex suscipit, quis maxime recusandae sunt corrupti at doloribus nesciunt iusto vel dignissimos aperiam aspernatur eos reprehenderit quas harum. Fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, rem fugit quas ipsum tempora, blanditiis culpa repellendus fuga iste rerum animi deleniti? Modi voluptatum repellendus magnam dolore qui sequi explicabo?",
+      "author": "Breno Ferreira",
+      "createAt": "2023-09-10T20:00:44.505Z"
+
+
+    },
+    {
+      "id": 4,
+      "title": "ReactJS e NextJS são a mesma coisa?",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolorem ex suscipit, quis maxime recusandae sunt corrupti at doloribus nesciunt iusto vel dignissimos aperiam aspernatur eos reprehenderit quas harum. Fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, rem fugit quas ipsum tempora, blanditiis culpa repellendus fuga iste rerum animi deleniti? Modi voluptatum repellendus magnam dolore qui sequi explicabo?",
+      "author": "Adilson Ferreira",
+      "createAt": "2023-08-10T20:00:44.505Z"
+
+    }
+  ]
+}
