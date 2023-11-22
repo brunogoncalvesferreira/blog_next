@@ -1,7 +1,7 @@
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
-import { PostsProps } from '../app/page'
 import Link from 'next/link'
 import { formattedDate } from '@/utils/formatted'
+import { PostsProps } from '@/contexts/PostsContext'
 
 export function CardPost({ title, body, author, createAt, id }: PostsProps) {
   const formatDate = formattedDate(createAt)
@@ -14,7 +14,7 @@ export function CardPost({ title, body, author, createAt, id }: PostsProps) {
           <time className="w-fit text-sm">{formatDate}</time>
         </CardHeader>
         <CardContent>
-          <p className="line-clamp-5 leading-relaxed text-gray-300">{body}</p>
+          <p className="line-clamp-4 leading-relaxed text-gray-300">{body}</p>
         </CardContent>
         <CardFooter>
           <p className="text-sm text-muted-foreground">{author}</p>

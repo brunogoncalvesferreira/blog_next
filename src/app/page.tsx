@@ -1,41 +1,15 @@
 'use client'
 
 import { CardPost } from '@/components/CardPost'
+
 import { Input } from '@/components/ui/input'
-import { api } from '@/lib/axios'
-import { useEffect, useState, useCallback } from 'react'
+import { PostsContext } from '@/contexts/PostsContext'
+import { useContext } from 'react'
 
-export interface PostsProps {
-  id?: number
-  title: string
-  body: string
-  author: string
-  createAt: string
-}
 export default function Home() {
-  const [posts, setPosts] = useState<PostsProps[]>([])
-
-  async function getPosts() {
-    const response = await api.get('posts')
-    setPosts(response.data)
-  }
-
-  const filterPosts = useCallback(async (query?: string) => {
-    const response = await api.get('posts', {
-      params: {
-        q: query,
-      },
-    })
-    setPosts(response.data)
-  }, [])
-
-  useEffect(() => {
-    getPosts()
-    filterPosts()
-  }, [filterPosts])
-
-  async function handleSearch(data: string) {
-    await filterPosts(data)
+  const { posts, filterPosts } = useContext(PostsContext)
+  function handleSearch(data: string) {
+    filterPosts(data)
   }
 
   return (
@@ -47,7 +21,7 @@ export default function Home() {
         />
       </form>
 
-      <div className="mt-20 grid gap-6 md:grid-cols-3">
+      <div className="mt-20 grid gap-6 md:grid-cols-2">
         {posts.map((post) => {
           return (
             <CardPost

@@ -3,9 +3,10 @@
 import { api } from '@/lib/axios'
 import { useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { PostsProps } from '@/app/page'
+
 import { Calendar, User } from 'phosphor-react'
 import { formattedDate } from '@/utils/formatted'
+import { PostsProps } from '@/contexts/PostsContext'
 
 export default function Post() {
   const params = useParams()

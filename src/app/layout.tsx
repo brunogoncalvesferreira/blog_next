@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Saira } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
+import { PostContextProvider } from '@/contexts/PostsContext'
 
-const inter = Inter({ subsets: ['latin'] })
+const saira = Saira({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Blog Next',
@@ -17,11 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="mx-auto w-full max-w-6xl px-6">
-          <Header />
-          <main> {children}</main>
-        </div>
+      <body className={saira.className}>
+        <PostContextProvider>
+          <div className="mx-auto w-full max-w-6xl px-6">
+            <Header />
+            <main> {children}</main>
+          </div>
+        </PostContextProvider>
       </body>
     </html>
   )
