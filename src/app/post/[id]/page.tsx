@@ -9,7 +9,6 @@ import { formattedDate } from '@/utils/formatted'
 
 export default function Post() {
   const params = useParams()
-
   const id = params.id
 
   const [post, setPost] = useState<PostsProps>({} as PostsProps)
