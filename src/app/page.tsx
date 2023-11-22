@@ -28,7 +28,7 @@ export default function Home() {
     <div className="mt-10 pb-40">
       <Input placeholder="Busque uma publicação" />
 
-      <div className="mt-20 grid grid-cols-3 gap-6">
+      <div className="mt-20 grid gap-6 md:grid-cols-3">
         {posts.map((post) => {
           return (
             <CardPost
@@ -37,6 +37,7 @@ export default function Home() {
               body={post.body}
               createAt={post.createAt}
               author={post.author}
+              id={post.id}
             />
           )
         })}

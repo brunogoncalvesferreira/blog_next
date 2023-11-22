@@ -3,11 +3,11 @@ import { PostsProps } from '../app/page'
 import Link from 'next/link'
 import { formattedDate } from '@/utils/formatted'
 
-export function CardPost({ title, body, author, createAt }: PostsProps) {
+export function CardPost({ title, body, author, createAt, id }: PostsProps) {
   const formatDate = formattedDate(createAt)
 
   return (
-    <Link href={`/posts`}>
+    <Link href={`/post/${id}`}>
       <Card>
         <CardHeader className="flex flex-row  justify-between">
           <strong className="flex-1 text-xl">{title}</strong>

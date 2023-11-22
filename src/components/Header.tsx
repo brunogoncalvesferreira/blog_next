@@ -6,9 +6,9 @@ const avatar = 'https://github.com/brunogoncalvesferreira.png'
 
 export function Header() {
   return (
-    <header className="mb-6 flex items-center justify-between border-b py-6">
-      <Link href="/" className="text-slate-50">
-        Blog
+    <header className="mb-6 flex items-center justify-between border-b py-10">
+      <Link href="/" className="text-xl font-bold text-slate-50">
+        {'<Blog/>'}
       </Link>
 
       <div className="flex items-center gap-4">
@@ -18,8 +18,8 @@ export function Header() {
           className="rounded-full"
           src={avatar}
           alt="Avatar Bruno Github"
-          width={64}
-          height={64}
+          width={48}
+          height={48}
         />
       </div>
     </header>
