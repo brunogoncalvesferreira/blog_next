@@ -3,7 +3,7 @@
     {
       "title": "Javascript, a linguagem de programação que temos que saber",
       "author": "Bruno Gonçalves Ferreira",
-      "body": "Javascript, é uma linguagem de programação que roda do lado do navegador, deixando as interfaces interativas. Porém hoje conseguimos rodar o Javascript do lado do servidor usado o Nodejs, além do frontend e backend podemos constuir aplicação modile através do React Native.",
+      "body": "Javascript, é uma linguagem de programação que roda do lado do navegador, deixando as interfaces interativas. Porém hoje conseguimos rodar o Javascript do lado do servidor usado o Nodejs, além do frontend e backend podemos constuir aplicação mobile através do React Native.",
       "createdAt": "2023-11-22T13:23:44.603Z",
       "id": 1
     },
