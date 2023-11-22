@@ -16,8 +16,8 @@ export function Header() {
 
       <div className="flex items-center gap-4">
         <Dialog>
-          <DialogTrigger>
-            <Button>Nova publicação</Button>
+          <DialogTrigger className="rounded bg-rose-600 p-2 text-sm font-semibold">
+            Nova publicação
           </DialogTrigger>
           <DialogContent>
             <NewPostModal />

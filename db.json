@@ -20,6 +20,27 @@
       "body": "Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags <style>. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.",
       "createdAt": "2023-11-22T13:42:25.699Z",
       "id": 3
+    },
+    {
+      "title": "Teste de título da publicação",
+      "author": "Jaqueline Apareceida do Nascimento",
+      "body": " Texto de teste  Texto de teste  Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste Texto de teste ",
+      "createdAt": "2023-11-22T19:34:32.748Z",
+      "id": 4
+    },
+    {
+      "title": "O que é o React e para que serve?",
+      "author": "Mark Zuckerberg",
+      "body": "\nReact: o que é, como funciona e um Guia da biblioteca JS | Alura\nReact é um framework JavaScript criado pelo Facebook (atual Meta) que é usado para criar interfaces de usuário (UI) em aplicativos web. Ele é popular por ser fácil de usar, altamente flexível e escalável, e é usado por muitas empresas de tecnologia, incluindo o Facebook, Instagram e Airbnb.",
+      "createdAt": "2023-11-22T20:04:31.262Z",
+      "id": 5
+    },
+    {
+      "title": "Para que serve OpenAI?",
+      "author": "Bruno Ferreira",
+      "body": "\nOpenAI é um laboratório de pesquisa de inteligência artificial (IA) estadunidense que consiste na organização sem fins lucrativos OpenAI Incorporated (OpenAI Inc.) e sua subsidiária com fins lucrativos OpenAI Limited Partnership (OpenAI LP).",
+      "createdAt": "2023-11-22T20:08:12.635Z",
+      "id": 6
     }
   ]
 }

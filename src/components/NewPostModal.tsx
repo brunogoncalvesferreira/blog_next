@@ -11,8 +11,8 @@ import { useContext } from 'react'
 import { PostsContext } from '@/contexts/PostsContext'
 
 const newPostSchema = z.object({
-  title: z.string(),
-  author: z.string(),
+  title: z.string().min(10, 'Este campo é obrigatório.'),
+  author: z.string().min(3, 'Este campo é obrigatório.'),
   body: z.string(),
 })
 

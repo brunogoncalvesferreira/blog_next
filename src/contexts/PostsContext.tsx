@@ -54,6 +54,8 @@ export function PostContextProvider({ children }: PostsContextProviderProps) {
   const filterPosts = useCallback(async (query?: string) => {
     const response = await api.get('posts', {
       params: {
+        _sort: 'createdAt',
+        _order: 'desc',
         q: query,
       },
     })
