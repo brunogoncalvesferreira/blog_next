@@ -22,7 +22,7 @@ export default function Post() {
     getPost()
   }, [id])
 
-  const formatDate = formattedDate(post.createAt)
+  const formatDate = formattedDate(post.createdAt)
 
   return (
     <div className="space-y-6">

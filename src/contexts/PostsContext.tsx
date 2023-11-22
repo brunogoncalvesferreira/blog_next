@@ -15,7 +15,7 @@ export interface PostsProps {
   title: string
   body: string
   author: string
-  createAt: string
+  createdAt: string
 }
 
 export type PostsContextProps = {

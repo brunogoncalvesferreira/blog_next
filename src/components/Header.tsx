@@ -3,6 +3,7 @@ import { Button } from './ui/button'
 import Link from 'next/link'
 import { Dialog, DialogContent, DialogTrigger } from './ui/dialog'
 import { NewPostModal } from './NewPostModal'
+import { Separator } from './ui/separator'
 
 const avatar = 'https://github.com/brunogoncalvesferreira.png'
 
@@ -22,6 +23,8 @@ export function Header() {
             <NewPostModal />
           </DialogContent>
         </Dialog>
+
+        <Separator orientation="vertical" className="mx-2" />
 
         <Image
           className="rounded-full"

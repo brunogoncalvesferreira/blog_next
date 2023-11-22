@@ -28,7 +28,7 @@ export default function Home() {
               key={post.id}
               title={post.title}
               body={post.body}
-              createAt={post.createAt}
+              createdAt={post.createdAt}
               author={post.author}
               id={post.id}
             />

@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { formattedDate } from '@/utils/formatted'
 import { PostsProps } from '@/contexts/PostsContext'
 
-export function CardPost({ title, body, author, createAt, id }: PostsProps) {
-  const formatDate = formattedDate(createAt)
+export function CardPost({ title, body, author, createdAt, id }: PostsProps) {
+  const formatDate = formattedDate(createdAt)
 
   return (
     <Link href={`/post/${id}`}>
