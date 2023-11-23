@@ -21,7 +21,7 @@ export interface PostsProps {
 export type PostsContextProps = {
   posts: PostsProps[]
   createPost: (data: newPostInputs) => void
-  filterPosts: (query?: string) => void
+  getPosts: (query?: string) => void
 }
 
 export const PostsContext = createContext({} as PostsContextProps)
@@ -46,12 +46,7 @@ export function PostContextProvider({ children }: PostsContextProviderProps) {
     setPosts((state) => [response.data, ...state])
   }, [])
 
-  const getPosts = useCallback(async () => {
-    const response = await api.get('posts')
-    setPosts(response.data)
-  }, [])
-
-  const filterPosts = useCallback(async (query?: string) => {
+  const getPosts = useCallback(async (query?: string) => {
     const response = await api.get('posts', {
       params: {
         _sort: 'createdAt',
@@ -64,10 +59,9 @@ export function PostContextProvider({ children }: PostsContextProviderProps) {
 
   useEffect(() => {
     getPosts()
-    filterPosts()
-  }, [getPosts, filterPosts])
+  }, [getPosts])
   return (
-    <PostsContext.Provider value={{ posts, createPost, filterPosts }}>
+    <PostsContext.Provider value={{ posts, createPost, getPosts }}>
       {children}
     </PostsContext.Provider>
   )

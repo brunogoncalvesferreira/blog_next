@@ -7,9 +7,9 @@ import { PostsContext } from '@/contexts/PostsContext'
 import { useContext } from 'react'
 
 export default function Home() {
-  const { posts, filterPosts } = useContext(PostsContext)
+  const { posts, getPosts } = useContext(PostsContext)
   function handleSearch(data: string) {
-    filterPosts(data)
+    getPosts(data)
   }
 
   return (
